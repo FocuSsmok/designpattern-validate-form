@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+    <style>
+        html {
+            background-color: hsl(171, 100%, 41%);
+        }
+      .register {
+        width: 40%;
+        min-width: 300px;
+        max-width: 500px;
+        margin: 50px;
+      }
+      .errors {
+        margin-top: 10px;
+        color: crimson;
+      }
+    </style>
+</head>
+
+<body>
+    <form action="registerSuccess.html" class="register">
+        <div class="register__field field">
+            <label for="username" class="label">Login</label>
+            <input type="text" class="input" id="username" />
+        </div>
+        <div class="register__field field">
+            <label for="email" class="label">Email</label>
+            <input type="text" class="input" id="email" />
+        </div>
+        <div class="register__field field">
+            <label for="first_name" class="label">Imię</label>
+            <input type="text" class="input" id="first_name" />
+        </div>
+        <div class="register__field field">
+            <label for="age" class="label">Wiek</label>
+            <input type="text" class="input" id="age" />
+        </div>
+        <div class="control">
+            <button class="button is-link">Zarejestruj!</button>
+        </div>
+        <div class="errors"></div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
